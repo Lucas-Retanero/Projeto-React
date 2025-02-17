@@ -1,0 +1,9 @@
+.fraseContainer {
+    background-color: #ccc;
+    border: solid 1px #000;
+}
+
+#frase {
+    font-size: 22px;
+    font-weight: bold;
+}
