@@ -1,9 +1,13 @@
+@import '../index.css';
+
 .fraseContainer {
-    background-color: #ccc;
-    border: solid 1px #000;
+    background-color: var(--gray-color);
+    border: solid 1px var(--black-color);
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 #frase {
-    font-size: 22px;
+    font-size: var(--font);
     font-weight: bold;
 }

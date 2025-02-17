@@ -1,10 +1,14 @@
+import styles from './Pessoa.module.css'
+
 function Pessoa({ nome, idade, profissao, foto }) {
     return (
-        <div>
-            <img src={foto} alt={nome} title={nome}></img>
-            <p>Nome: {nome}</p>
-            <p>Idade: {idade}</p>
-            <p>Profissão: {profissao}</p>
+        <div className={styles.pessoaContainer}>
+            <img id={styles.foto} src={foto} alt={nome} title={nome}></img>
+            <div className={styles.pessoaInfo}>
+                <p><b>Nome:</b> {nome}</p>
+                <p><b>Idade:</b> {idade}</p>
+                <p><b>Profissão:</b> {profissao}</p>
+            </div>
         </div>
     );
 }
