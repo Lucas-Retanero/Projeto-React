@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWord from './components/HelloWord';
+import DigaMeuNome from './components/DigaMeuNome';
+import Pessoa from './components/pessoa';
 
 function App() {
+  const name = "Lucas";
+  const idade = 19;
+  const profissao = "Programador";
+  const foto = "https://randomuser.me/api/portraits/lego/1.jpg";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Olá {name}!</h1>
+      <p>Estou aprendendo React</p>
+      <HelloWord />
+      <DigaMeuNome nome={name} />
+      <DigaMeuNome nome="João" />
+      <Pessoa nome={name} idade={idade} profissao={profissao} foto={foto} />
     </div>
   );
 }
